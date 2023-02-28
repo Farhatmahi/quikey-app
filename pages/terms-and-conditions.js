@@ -6,10 +6,10 @@ const Terms = () => {
   return (
     <div className="bg-white">
       <Header />
-      <section class="bg-[url('/assets/img/about/Group1000001808.png')] bg-cover bg-no-repeat h-[80vh]">
-        <div class="flex justify-between text-white relative mx-auto">
-          <div class="absolute w-11/12 left-8 top-24 lg:left-20 lg:top-30 flex justify-center items-center">
-            <div class="flex flex-col justify-center items-center text-black leading-loose">
+      <section className="bg-[url('/assets/img/about/Group1000001808.png')] bg-cover bg-no-repeat h-[80vh]">
+        <div className="flex justify-between text-white relative mx-auto">
+          <div className="absolute w-11/12 left-8 top-24 lg:left-20 lg:top-30 flex justify-center items-center">
+            <div className="flex flex-col justify-center items-center text-black leading-loose">
               <img
                 src="/assets/img/terms-conditions/Messagereceived.png"
                 alt=""
@@ -70,9 +70,15 @@ const Terms = () => {
           others. You must not:
         </p>
         <ul className="pb-4">
-          <li className="list-disc ml-8">Harass, bully, or intimidate other users.</li>
-          <li className="list-disc ml-8">Post Content that is obscene, defamatory, or discriminatory.</li>
-          <li className="list-disc ml-8">Use our app for any illegal activities.</li>
+          <li className="list-disc ml-8">
+            Harass, bully, or intimidate other users.
+          </li>
+          <li className="list-disc ml-8">
+            Post Content that is obscene, defamatory, or discriminatory.
+          </li>
+          <li className="list-disc ml-8">
+            Use our app for any illegal activities.
+          </li>
           <li className="list-disc ml-8">
             Engage in any activities that could harm our app's community or
             reputation.
@@ -130,10 +136,12 @@ const Terms = () => {
         <p className="pb-16">
           <span className="font-bold">Conclusion:</span>
           <br />
-          Thank you for using Quikey. We hope you enjoy your experience with us and appreciate your compliance with these Terms and our Privacy Policy. 
+          Thank you for using Quikey. We hope you enjoy your experience with us
+          and appreciate your compliance with these Terms and our Privacy
+          Policy.
         </p>
       </section>
-      <div class="border-2 border-slate-800 border-solid"></div>
+      <div className="border-2 border-slate-800 border-solid"></div>
       <Footer2 />
     </div>
   );

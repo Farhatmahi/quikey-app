@@ -7,8 +7,10 @@ const Footer = () => {
     <>
       <footer className="bg-[url('/asset/Pattern.png')] bg-cover bg-no-repeat text-white -mt-24 lg:-mt-36 py-20 relative z-10">
         <div className="container mx-auto px-4 md:px-0">
-          <div class="pt-20">
-            <h2 class="text-[1.875rem] leading-[3rem] mb-4">Get in touch!</h2>
+          <div className="pt-20">
+            <h2 className="text-[1.875rem] leading-[3rem] mb-4">
+              Get in touch!
+            </h2>
             <form action="mail.php" method="POST" className="inline">
               <input
                 type="text"

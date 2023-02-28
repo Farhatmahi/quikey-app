@@ -13,12 +13,12 @@ const Banner = () => {
       />
       <div className="overlay-banner"></div>
       <div className="flex flex-col justify-center items-center text-center absolute text-white">
-        <h1 className="text-[1.875rem] leading-[3rem] mb-4 lg:text-6xl font-light mb-8 px-4">
+        <h1 className="text-[2.875rem] leading-[3rem] mb-4 lg:text-7xl font-light px-4">
           An average Indian uses 7 social
-          {/* <br /> */}
-          media apps daily{" "}
+          {" "}
+          media apps daily
         </h1>
-        <p>
+        <p className="text-lg">
           Quikey provides three servoces in one app and is proudly designed and
           develped in India.
         </p>

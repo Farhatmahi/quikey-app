@@ -6,10 +6,10 @@ const PrivacyPolicy = () => {
   return (
     <div className="bg-white">
       <Header />
-      <section class="bg-[url('/assets/img/about/Group1000001808.png')] bg-cover bg-no-repeat h-[80vh]">
-        <div class="flex justify-between text-white relative mx-auto">
-          <div class="absolute w-11/12 left-8 top-20 lg:left-20 lg:top-30 flex justify-center items-center">
-            <div class="flex flex-col justify-center items-center text-black leading-loose">
+      <section className="bg-[url('/assets/img/about/Group1000001808.png')] bg-cover bg-no-repeat h-[80vh]">
+        <div className="flex justify-between text-white relative mx-auto">
+          <div className="absolute w-11/12 left-8 top-20 lg:left-20 lg:top-30 flex justify-center items-center">
+            <div className="flex flex-col justify-center items-center text-black leading-loose">
               <img src="/assets/img/privacy-policy/Datasecurity.png" alt="" />
             </div>
           </div>
@@ -165,7 +165,7 @@ const PrivacyPolicy = () => {
           with us!
         </p>
       </section>
-      <div class="border-2 border-slate-800 border-solid"></div>
+      <div className="border-2 border-slate-800 border-solid"></div>
       <Footer2 />
     </div>
   );

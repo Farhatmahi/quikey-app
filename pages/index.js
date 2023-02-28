@@ -30,7 +30,7 @@ export default function Home() {
         <Section5 />
         <Section6 />
         <Section7 />
-        <Footer />
+        {/* <Footer /> */}
         <Copyright />
       </div>
     </>

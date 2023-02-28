@@ -7,8 +7,10 @@ const Footer2 = () => {
     <>
       <footer className="bg-[url('/assets/img/about/Pattern.png')] bg-cover bg-no-repeat py-10 lg:py-20 z-10 text-black">
         <div className="container mx-auto px-4 md:px-0">
-          <div class="">
-            <h2 class="text-[1.875rem] leading-[3rem] mb-4">Subscribe now!</h2>
+          <div className="">
+            <h2 className="text-[1.875rem] leading-[3rem] mb-4">
+              Subscribe now!
+            </h2>
             <form action="mail.php" method="POST">
               <input
                 type="text"
@@ -73,7 +75,7 @@ const Footer2 = () => {
                       Connect Now!
                     </a>
                     <div className="flex justify-between items-center space-x-2 mt-4">
-                      <a  href="https://www.facebook.com/quikeyapp">
+                      <a href="https://www.facebook.com/quikeyapp">
                         <BsFacebook className="text-black text-2xl cursor-pointer" />
                       </a>
                       <a href="https://www.instagram.com/thequikeyapp/">
