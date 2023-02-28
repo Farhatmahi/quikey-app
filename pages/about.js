@@ -26,23 +26,19 @@ const About = () => {
             designed to reflect the Indian values and culture, while providing a
             safe and engaging space for people to connect and share their
             stories.
-          </p>
-          <br />
-          <p className="pb-4 ">
+  
             As a part of the Make in India campaign, we are committed to
             contributing to the growth and development of the Indian economy by
             creating employment opportunities and promoting entrepreneurship. We
             believe that India has the potential to become a leading hub for
             technology and innovation, and we are dedicated to being a part of
             this journey.
-          </p>
-          <p className="pb-4  leading-8">
+    
             Our mission at Quikey is to provide a platform that is inclusive and
             accessible to all. We believe that social media should be a tool for
             positive change, and we are committed to creating an environment
             where users feel safe and empowered to express themselves freely.
-          </p>
-          <p className="pt-4  leading-8">
+       
             Our team comprises of a diverse group of individuals who share a
             passion for technology and innovation. We believe that diversity and
             inclusivity are key factors in driving innovation, and we strive to
@@ -56,14 +52,12 @@ const About = () => {
             kept safe and secure. We are committed to being transparent about
             our data handling practices, and we regularly update our privacy
             policy to reflect any changes in our policies or practices.
-          </p>
-          <p className="pb-4  leading-8">
+        
             In addition to providing a safe and engaging platform for users, we
             also believe in giving back to society. We are committed to
             supporting various social causes and initiatives that promote
             education, healthcare, and environmental sustainability.
-          </p>
-          <p className="pt-4  leading-8">
+      
             At Quikey, we are dedicated to creating a social media platform that
             reflects the Indian values and culture, while also being at par with
             the best in the world. We believe that by empowering users to

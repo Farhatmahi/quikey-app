@@ -26,6 +26,7 @@ body {
 
 .indivForm {
   display: flex;
+  justify-content: center;
 }
 .indivForm input {
   padding: 20px 15px;

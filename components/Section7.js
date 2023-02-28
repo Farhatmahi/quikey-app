@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -15,8 +15,26 @@ import Footer from "./Footer";
 // register Swiper custom elements
 
 const Section7 = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await fetch("https://quikey-server.vercel.app/subscribers", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+    const data = await response.json();
+    console.log(data);
+  };
+
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
   return (
-    <><div className="bg-[url('/asset/Group10.png')] bg-cover bg-no-repeat min-h-screen h-[150vh] lg:h-[120vh] flex items-center z-20 relative">
+    <><div className="bg-[url('/asset/Group10.png')] bg-cover bg-bottom bg-no-repeat min-h-screen h-[130vh] lg:h-screen flex items-center z-40 relative">
     <div className="container mx-auto px-4 md:px-0">
       <div className="flex flex-col-reverse lg:flex-row-reverse justify-between items-center lg:-mt-48 ">
         <div className="lg:w-1/2">
@@ -58,14 +76,15 @@ const Section7 = () => {
           </div>
           <form
             className="block lg:hidden mt-10"
-            action="/mail.php"
-            method="POST"
+            onSubmit={handleSubmit}
           >
             <div className="indivForm">
               <input
                 type="email"
                 placeholder="Enter your email"
                 name="email"
+                value={email}
+                onChange={handleInputChange}
               />
               <button type="submit" className="text-white">
                 Witness
@@ -94,7 +113,7 @@ const Section7 = () => {
       </div>
     </div>
   </div>
-  <Footer /></>
+</>
   );
 };
 

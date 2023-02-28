@@ -1,24 +1,46 @@
 import { FaPaperPlane } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await fetch("https://quikey-server.vercel.app/subscribers", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+    const data = await response.json();
+    console.log(data);
+  };
+
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <>
-      <footer className="bg-[url('/asset/Pattern.png')] bg-cover bg-no-repeat text-white -mt-24 lg:-mt-36 py-20 relative z-10">
+      <footer className="bg-[url('/asset/Pattern.png')] bg-cover bg-no-repeat text-white -mt-24 lg:-mt-36 py-20 relative z-20">
         <div className="container mx-auto px-4 md:px-0">
           <div className="pt-20">
             <h2 className="text-[1.875rem] leading-[3rem] mb-4">
               Get in touch!
             </h2>
-            <form action="mail.php" method="POST" className="inline">
-              <input
+            <form onSubmit={handleSubmit} className="inline">
+            <input
                 type="text"
                 className="bg-transparent w-3/4 lg:w-1/4 focus:outline-none"
                 placeholder="Your Email"
                 name="email"
+                value={email}
+                onChange={handleInputChange}
               />
-              <FaPaperPlane className="inline text-2xl" />
+              <button type="submit"><FaPaperPlane className="inline text-2xl" /></button>
               {/* <img className="mt-2" src="/public/asset/Line 5.png" alt="" /> */}
               <img src="/asset/Line 5.png" className="lg:w-1/4 mt-2" alt="" />
             </form>
