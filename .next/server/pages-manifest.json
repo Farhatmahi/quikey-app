@@ -1,0 +1,16 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/about": "pages/about.html",
+  "/api/hello": "pages/api/hello.js",
+  "/coming-soon": "pages/coming-soon.html",
+  "/contact-us": "pages/contact-us.html",
+  "/content-policy": "pages/content-policy.html",
+  "/data-policy": "pages/data-policy.html",
+  "/": "pages/index.html",
+  "/privacy-policy": "pages/privacy-policy.html",
+  "/security-policy": "pages/security-policy.html",
+  "/terms-and-conditions": "pages/terms-and-conditions.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
